@@ -1,0 +1,24 @@
+.meal_container{
+    display: flex;
+    justify-content: center;
+}
+.meal_box{
+    background-color: #ffffff;
+    width: 900px;
+    padding: 20px;
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.res_name{
+    font-weight: bold;
+}
+.res_menu{
+    font-style: italic;
+}
+.res_price{
+    color: rgb(147, 71, 16);
+    font-weight: bold;
+}
