@@ -1,0 +1,7 @@
+.banner_box{
+    height: 200px;
+    background-image: url('../../assets/meals.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
