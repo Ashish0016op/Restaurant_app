@@ -22,3 +22,41 @@
     color: rgb(147, 71, 16);
     font-weight: bold;
 }
+.res_box{
+    display: flex;
+    justify-content: space-between;
+}
+.res_amount{
+    display: flex;
+    gap: 10px;
+}
+.input_box{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+}
+.inp_btn{
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+}
+.res_add_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add_btn{
+    color: #ffffff;
+    background-color: rgb(117, 32, 8);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
