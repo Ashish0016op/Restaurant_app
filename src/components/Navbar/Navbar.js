@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className='nav_cart_box' onClick={openCartHandler}>
             <div className='cart_icon'><FaCartShopping/></div>
             <p>Your Cart</p>
-            <div className='cart_count'>0</div>
+            <div className='cart_count'>{ctx.cartItem.length}</div>
         </div>
       </div>
     </div>

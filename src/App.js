@@ -7,8 +7,10 @@ import './index.css';
 import CartContext from './store/cart-context';
 function App() {
   const[openCart,setOpenCart]=useState(false);
+  const[cartItem,setCartItem]=useState([]);
+
   return(
-    <CartContext.Provider value={{openCart,setOpenCart}}>
+    <CartContext.Provider value={{openCart,setOpenCart,cartItem,setCartItem}}>
       <Home/>
       {openCart && <Modal/>}
     </CartContext.Provider>
