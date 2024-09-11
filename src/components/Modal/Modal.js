@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { createPortal } from 'react-dom';
 import './Modal.css';
+import CartContext from '../../store/cart-context';
 const Modal = () => {
   const overlay = document.getElementById('overlays');
-
+  const ctx=useContext(CartContext);
+  const closeCartHandler=()=>{
+    ctx.setOpenCart(false);
+  }
   return createPortal(
     <div className='modal'>
         <div className='modal-content'>
@@ -13,7 +17,7 @@ const Modal = () => {
               <div>35.62</div>
             </div>
             <div className='cart_btn_box'>
-              <button>Close</button>
+              <button onClick={closeCartHandler}>Close</button>
               <button>Order</button>
             </div>
         </div>

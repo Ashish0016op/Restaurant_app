@@ -1,14 +1,17 @@
 
 
+import { useState } from 'react';
 import Home from './components/Layouts/Home/Home';
 import Modal from './components/Modal/Modal';
 import './index.css';
+import CartContext from './store/cart-context';
 function App() {
-  return (
-    <div>
+  const[openCart,setOpenCart]=useState(false);
+  return(
+    <CartContext.Provider value={{openCart,setOpenCart}}>
       <Home/>
-      <Modal/>
-    </div>
+      {openCart && <Modal/>}
+    </CartContext.Provider>
   );
 }
 
