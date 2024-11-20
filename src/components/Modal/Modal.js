@@ -42,6 +42,7 @@ const IncreseQuantityHandle=(Item)=>{
 }
   return createPortal(
     <div className='modal'>
+      <h1>Heloow</h1>
       <div className='modal-content'>
         {ctx.cartItem.length > 0 ? (
           <>

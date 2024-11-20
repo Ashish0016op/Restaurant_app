@@ -1,10 +1,22 @@
 import React, { useContext } from "react";
 import "./MealCard.css";
 import CartContext from "../../store/cart-context";
+import { ToastContainer, toast,Bounce } from 'react-toastify';
 
+  import 'react-toastify/dist/ReactToastify.css';
 const MealCard = () => {
   const ctx = useContext(CartContext);
-
+  const notify = () => toast.success('🦄 Added To Cart!', {
+    position: "top-center",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    transition: Bounce,
+    });;
   const meal = [
     { id: "m1", name: "Sushi", menu: "Finest Fish and Veggies", price: 22.99 },
     { id: "m2", name: "Schnitzel", menu: "A German speciality!", price: 16.5 },
@@ -47,14 +59,12 @@ const MealCard = () => {
                   }}
                 >
                   <div className="res_amount">
-                    <p>Amount</p>
+                    <p>Quantity</p>
                     <div className="input_box">
-                      <button className="inp_btn">-</button>
                       <div>1</div>
-                      <button className="inp_btn">+</button>
                     </div>
                   </div>
-                  <button type="submit" className="add_btn">+ Add</button>
+                  <button type="submit" onClick={notify} className="add_btn">+ Add</button>
                 </form>
               </div>
               <hr />
@@ -62,6 +72,7 @@ const MealCard = () => {
           );
         })}
       </div>
+      <ToastContainer />
     </div>
   );
 };

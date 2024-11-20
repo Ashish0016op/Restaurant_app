@@ -4,7 +4,7 @@
     align-items: center;
     color: #ffffff;
     padding: 10px;
-    background-color: rgb(119, 31, 10);
+    background-color: rgb(214, 239, 147);
 }
 .logo_heading{
     font-size:xx-large;
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: rgb(65, 20, 1);
+    background-color: rgb(242, 84, 16);
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -29,7 +29,7 @@
     color: #ffffff;
 }
 .cart_count{
-    background-color: rgb(119, 31, 10);
+    background-color: rgb(205, 193, 189);
     border-radius: 35%;
     padding: 8px;
     padding-left: 12px;
